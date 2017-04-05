@@ -38,7 +38,7 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <title>Calculate pipe cost</title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="jquery.chained.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Pipe Cost Calculator</title>
@@ -104,6 +104,7 @@
             });
             
             function calculate() {
+
                 var dist=document.getElementById("b").value;
                 var a = document.getElementById("subclass");
                 var val=a.options[subclass.selectedIndex].value;
